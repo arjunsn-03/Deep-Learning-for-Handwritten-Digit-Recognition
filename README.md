@@ -1,95 +1,62 @@
-Sure! Here's the clean, professional README content — just copy and paste:
+# Handwritten Digit Classification using TensorFlow and MNIST
 
----
+This project demonstrates a deep learning model built using TensorFlow and Keras to classify handwritten digits from the MNIST dataset. It follows the complete machine learning workflow, including data preprocessing, model building, training, evaluation, and result visualization.
 
-```markdown
-# 🧠 Handwritten Digit Classification using TensorFlow and MNIST
+## Overview
 
-This project demonstrates a deep learning approach to classifying handwritten digits using the MNIST dataset and TensorFlow's Keras API. It covers the full machine learning workflow — from data loading and preprocessing to model building, training, evaluation, and visualization.
+- Dataset: MNIST (60,000 training and 10,000 testing images of digits 0–9)
+- Framework: TensorFlow 2.x with Keras
+- Task: Multi-class classification
+- Model: Fully connected feedforward neural network
 
----
+## Model Architecture
 
-## 📌 Overview
+- Input Layer: 28x28 grayscale image (flattened to 784)
+- Hidden Layer: Dense layer with 512 units and ReLU activation
+- Output Layer: Dense layer with 10 units and softmax activation
+- Loss Function: Sparse Categorical Crossentropy
+- Optimizer: Adam
+- Metric: Accuracy
+- Callback: EarlyStopping (training stops at 98% accuracy)
 
-- **Dataset:** MNIST (60,000 training + 10,000 testing images of digits 0–9)
-- **Framework:** TensorFlow 2.x with Keras
-- **Task:** Multiclass image classification
-- **Model Type:** Fully-connected (dense) neural network
+## Getting Started
 
----
-
-## 🧠 Model Architecture
+1. Clone the repository
 
 ```
-
-Input Layer: 28x28 grayscale image (flattened)
-Hidden Layer: Dense(512 units) + ReLU
-Output Layer: Dense(10 units) + Softmax
-
-````
-
-- **Loss Function:** Sparse Categorical Crossentropy  
-- **Optimizer:** Adam  
-- **Metric:** Accuracy  
-- **Callback:** EarlyStopping (stops training at 98% accuracy)
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 cd YOUR_REPO
-````
+```
 
-### 2. Install Dependencies
+2. Install dependencies
 
-```bash
+```
 pip install tensorflow matplotlib seaborn
 ```
 
-### 3. Run the Notebook
+3. Run the notebook
 
-Open the notebook using Jupyter or Google Colab:
+Open the file `Handwritten_Digit_classification_using_tf_and_mnist_datset.ipynb` using Jupyter Notebook or Google Colab.
 
-* `Handwritten_Digit_classification_using_tf_and_mnist_datset.ipynb`
+## Results
 
----
+- Achieves over 98% accuracy within a few epochs
+- Includes confusion matrix and sample prediction visualization
+- Plots training history for loss and accuracy
 
-## 📊 Outputs & Evaluation
+## Files
 
-* **Accuracy:** Typically reaches >98% within a few epochs
-* **Evaluation:** Confusion matrix, sample predictions
-* **Visualizations:** Training history, misclassified examples
+- `Handwritten_Digit_classification_using_tf_and_mnist_datset.ipynb`: Main notebook
+- `README.md`: Project documentation
 
----
+## Requirements
 
-## 📁 Files
+- Python 3.7+
+- TensorFlow 2.x
+- Matplotlib
+- Seaborn
 
-```
-📦 handwritten-digit-classification
- ┣ 📜 Handwritten_Digit_classification_using_tf_and_mnist_datset.ipynb
- ┗ 📜 README.md
-```
+## License
 
----
+This project is licensed under the MIT License.
 
-## 🧪 Requirements
-
-* Python 3.7+
-* TensorFlow 2.x
-* Matplotlib
-* Seaborn
-
----
-
-> ⭐️ If you found this helpful, feel free to star the repo and share!
-
-```
-
----
-
-Let me know if you'd like a matching `requirements.txt` file or a launch-on-Colab badge too!
-```
